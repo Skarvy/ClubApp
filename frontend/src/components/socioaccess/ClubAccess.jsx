@@ -29,8 +29,7 @@ const ClubAccess = () => {
     }
   };
 
-  const checkAccess = (userData) => {
-    console.log('Verificando acceso del socio...', userData);
+  const checkAccess = (userData) => {  
     let message = '';
 
     if (!userData || !userData.actividades || userData.actividades.length === 0) {
@@ -70,7 +69,7 @@ const ClubAccess = () => {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container m-4 p-5 shadow">
     <h2>Verificar Acceso al Club</h2>
     <div className="form-group">
       <label htmlFor="dni">DNI:</label>
@@ -82,7 +81,7 @@ const ClubAccess = () => {
         onChange={(e) => setDNI(e.target.value)}
       />
     </div>
-    <button className="btn btn-primary" onClick={handleCheckAccess}>Verificar</button>
+    <button className="btn btn-primary mt-2" onClick={handleCheckAccess}>Verificar</button>
     {error && <p className="text-danger mt-2">{error}</p>}
     {message && <p className="mt-2">{message}</p>}
   </div>
