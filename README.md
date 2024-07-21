@@ -35,3 +35,44 @@ Sigue estos pasos para clonar y ejecutar la aplicación:
 
    ```bash
    git clone https://github.com/Skarvy/ClubApp
+
+
+2. **Instalar Dependencias**:
+
+Navega a la carpeta del proyecto:
+
+```bash
+cd clubapp
+```
+Luego, instala las dependencias del backend:
+
+```bash
+npm install
+```
+Y luego las del frontend:
+
+```bash
+cd frontend
+npm install
+cd ..
+```
+
+Configurar Variables de Entorno:
+
+Asegúrate de configurar el archivo .env con la variable MONGO_DB_URI para la conexión a MongoDB.
+
+Iniciar el Servidor:
+
+Desde la raíz del proyecto, ejecuta el servidor:
+
+```bash
+npm run server
+```
+
+Iniciar el Frontend:
+
+En una nueva terminal, navega a la carpeta del frontend y ejecuta:
+
+```bash
+npm run dev
+```
